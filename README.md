@@ -12,4 +12,3 @@ O usuário pode pesquisar os detalhes de qualquer pokémon clicando no painel me
 # Design
 Este projeto usa o padrão Master-Detail.
 Uma lista de itens é exibida e o usuário pode obter detalhes clicando nesses itens.
-# Pokedex_Project
