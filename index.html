@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpeg" href="pokeball.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokedex_Project</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <img src="pokeball.png" alt="Pokeball image">
+            <h1>POKÉDEX</h1>
+        </header>
+        <section id="master-pane">
+                <a class="pokemon" href="#/bulbasaur" data-id="1"><p><span>1</span>BULBASAURR</p></a>
+                <a class="pokemon" href="#/ivysaur" data-id="2"><p><span>2</span>IVYSAUR</p></a>
+                <a class="pokemon" href="#/venusaur" data-id="3"><p><span>3</span>VENUSAUR</p></a>
+                <a class="pokemon" href="#/charmander"><p><span>4</span>CHARMANDER</p></a>
+                <a class="pokemon" href="#/charmeleon" ><p><span>5</span>CHARMELEON</p></a>
+                <a class="pokemon" href="#/charizard" ><p><span>6</span>CHARIZARD</p></a>
+                <a class="pokemon" href="#/squirtle" ><p><span>7</span>SQUIRTLE</p></a>
+                <a class="pokemon" href="#/wartortle" ><p><span>8</span>WARTORTLE</p></a>
+                <a class="pokemon" href="#/blastoise" ><p><span>9</span>BLASTOISE</p></a>
+                <a class="pokemon" href="#/caterpie" ><p><span>10</span>CATERPIE</p></a>
+                <a class="pokemon" href="#/metapod" ><p><span>11</span>METAPOD</p></a>
+                <a class="pokemon" href="#/butterfree" ><p><span>12</span>BUTTERFREE</p></a>
+                <a class="pokemon" href="#/weedle"><p><span>13</span>WEEDLE</p></a>
+                <a class="pokemon" href="#/kakuna" ><p><span>14</span>KAKUNA</p></a>
+                <a class="pokemon" href="#/beedrill" ><p><span>15</span>BEEDRILL</p></a>
+                <a class="pokemon" href="#/pidgey" ><p><span>16</span>PIDGEY</p></a>
+                <a class="pokemon" href="#/pidgeotto"><p><span>17</span>PIDGEOTTO</p></a>
+                <a class="pokemon" href="#/pidgeot"  ><p><span>18</span>PIDGEOT</p></a>
+                <a class="pokemon" href="#/rattata" ><p><span>19</span>RATTATA</p></a>
+                <a class="pokemon" href="#/raticate" data-id="20"><p><span>20</span>RATICATE</p></a>
+                <a class="pokemon" href="#/spearow" ><p><span>21</span>SPEAROW</p></a>
+                <a class="pokemon" href="#/fearow" ><p><span>22</span>FEAROW</p></a>
+                <a class="pokemon" href="#/ekans"><p><span>23</span>EKANS</p></a>
+                <a class="pokemon" href="#/arbok" ><p><span>24</span>ARBOK</p></a>
+                <a class="pokemon" href="#/pikachu" ><p><span>25</span>PIKACHU</p></a>
+                <a class="pokemon" href="#/raichu" ><p><span>26</span>RAICHU</p></a>
+                <a class="pokemon" href="#/sandshrew"><p><span>27</span>SANDSHREW</p></a>
+                <a class="pokemon" href="#/sandslash"  ><p><span>28</span>SANDSLASH</p></a>
+                <a class="pokemon" href="#/nidoran-f" ><p><span>29</span>NIDORIAN-F</p></a>
+                <a class="pokemon" href="#/nidorina" data-id="30"><p><span>30</span>NIDORINA</p></a>
+        </section>
+        <section id="details-pane">
+            <article class="mainInfo">
+                <div id="imgWrapper">
+                    <img src="" alt="" id="pokemonImage">
+                </div>
+
+                <div id="type">
+                    <div class="typeBox" id="element"><p></p></div>
+                    <div class="typeBox" id="skill"></div>
+                </div>
+                <div id="name">
+                    <div id="pokemonName"></div>
+                    <div>Numero. <span id="pokemonNum"> </span> </div>
+                </div>
+            </article>
+            <article class="stats">
+                <div id="titleStats-wrapper">
+                    <p>ESTATÍSTICAS: <span id="statName"></span></p>
+                </div>
+                <section id="stats-wrapper">
+                    <div class="stat">
+                        <p>HP | Vida</p>
+                        <p id="hpNum">29</p>
+                        <div class="meter">
+                            <span id="hp"></span>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <p>Ataque</p>
+                        <p id="attackNum">29</p>
+                        <div class="meter">
+                            <span id="attack"></span>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <p>Defesa</p>
+                        <p id="defenseNum">29</p>
+                        <div class="meter">
+                            <span id="defense"></span>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <p>Especial Ataque</p>
+                        <p id="speacialAttackNum">36</p>
+                        <div class="meter">
+                            <span id="special-attack"></span>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <p>Especial Defesa</p>
+                        <p id="specialDefenseNum">29</p>
+                        <div class="meter">
+                            <span id="special-deffense"></span>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <p>Velocidade</p>
+                        <p id="speedNum">29</p>
+                        <div class="meter">
+                            <span id="speed"></span>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <p>Total</p>
+                        <p id="totalNum" >29</p>
+                        <div class="meter" id="notQuite">
+                            <span id="speed"></span>
+                        </div>
+                    </div>
+                </section>
+                      <div id="sprites">
+                                <img src="" alt="Pokemon smalll image" id="uno">
+                                <img src="" alt="Pokemon smalll image" id="dos">
+                                <img src="" alt="Pokemon smalll image" id="tres">
+                            </div>
+            </article>
+            <article class="something">
+                <div class="w-h">
+                    <div>Peso: <span id="kg"></span> / <span id="lbs"></span></div>
+                    <div>Altura: <span id="m"></span> / <span id="foot"></span></div>
+                </div>
+          <div class="abilities">
+            <p id="a1">habilidade</p>
+            <p id="a2">habilidade</p>
+          </div>
+             
+            </article>
+
+            <p id="text">ESCOLHA UM POKÉMON</p>
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
